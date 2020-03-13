@@ -11,6 +11,7 @@
             grid-template-columns: repeat(2, 1fr 2fr);
             grid-gap: 1em;
             grid-template-rows: minmax(100px,auto);
+            justify-items: start;
         }
         .grid-container>div{
             padding: 1em;
@@ -19,11 +20,15 @@
         .grid-container>div:nth-child(even){
             background-color: lightgray;
         }
+        #div1{
+            justify-self: center;
+            align-self: center;
+        }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, et?1</div>
+        <div id="div1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, et?1</div>
         <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, et?2</div>
         <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, et?3</div>
         <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, et?4</div>
